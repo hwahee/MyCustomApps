@@ -1,0 +1,19 @@
+doctype html
+html(lang='en')
+	head
+		title My Custom Apps
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+		script(src='/static/js/chime.js' type="module")
+
+	body
+		h1 차임
+		canvas#myCanvas(width="400px" height="400px" style="background-color:skyblue;")
+		br
+		input#time-set(type="num" value="1000" placeholder="0000ms")
+		br
+		select#notation-set
+			option(value="ms" selected) ms
+			option(value="s.ss" ) s.ss
+			option(value="mm:ss.ss" ) mm:ss.ss
+		br
+		input#start-stop(type="button" value="start/stop")
